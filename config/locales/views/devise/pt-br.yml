@@ -1,0 +1,18 @@
+ pt-br:
+  devise:
+    sessions:
+      new:
+        sign_in: 'Entrar'
+        sign_up: 'Registrar'
+    shared:
+      links:
+        sign_in: 'Entrar'
+        sign_up: 'Registrar'
+        forgot: 'Esqueceu sua senha?'
+    registrations:
+      new:
+        sign_up: 'Registrar'
+    passwords:
+      new:
+        forgot: 'Esqueceu sua senha?'
+        send: 'Envie-me instruções para redefinir senhas'

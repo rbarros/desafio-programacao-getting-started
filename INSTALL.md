@@ -5,10 +5,7 @@
 $ bundle
 
 # Cria as tabelas automaticamente
-$ rake db:migrate
-
-# Insere registros nas tabelas criadas
-$ rake db:seed
+$ rake db:setup
 
 # Inicia o servidor para teste
 $ rails s

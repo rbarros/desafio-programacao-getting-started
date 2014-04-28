@@ -1,4 +1,5 @@
 Cms::Application.routes.draw do
+  devise_for :users
   resources :orders
 
   resources :buyers
@@ -11,7 +12,9 @@ Cms::Application.routes.draw do
 
   resources :items
 
-  root :to => redirect('/orders')
+  #root :to => redirect('/orders')
+
+  root :to => "orders#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
