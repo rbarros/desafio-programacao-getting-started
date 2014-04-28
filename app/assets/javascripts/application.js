@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+    'use strict';
+    $(document).on('click', '.dropdown-toggle', function () {
+        var toggle = $(this).data('toggle');
+        var menu = $('.' + toggle).toggleClass('open').find('dropdown-menu');
+        menu.toggle();
+    });
+})
