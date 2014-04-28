@@ -1,0 +1,15 @@
+pt-br:
+  sellers:
+    index:
+      listing: 'Lista de Itens'
+      editing: 'Editando Item'
+      new: 'Novo Item'
+      description: 'Descrição'
+      price: 'Valor'
+    new:
+      new: 'Novo Item'
+    show:
+      description: 'Descrição'
+      price: 'Valor'
+    edit:
+      editing: 'Editando Item'

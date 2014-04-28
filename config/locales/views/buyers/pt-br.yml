@@ -1,0 +1,13 @@
+pt-br:
+  buyers:
+    index:
+      listing: 'Lista de Compradores'
+      editing: 'Editando Comprador'
+      new: 'Novo Comprador'
+      name: 'Nome'
+    new:
+      new: 'Novo Comprador'
+    show:
+      name: 'Nome'
+    edit:
+      editing: 'Editando Comprador'

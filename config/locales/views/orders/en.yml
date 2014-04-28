@@ -1,0 +1,13 @@
+en:
+  orders:
+    index:
+      listing: 'Listing Orders'
+      editing: 'Editing Order'
+      new: 'New Order'
+      qty: 'Quantity'
+    new:
+      new: 'New Order'
+    show:
+      name: 'Name'
+    edit:
+      editing: 'Editing Order'

@@ -1,0 +1,19 @@
+pt-br:
+  orders:
+    index:
+      listing: 'Lista de Ordens de Venda'
+      editing: 'Editando Ordem'
+      new: 'Nova Ordem'
+      seller: 'Vendedor'
+      buyer: 'Comprador'
+      item: 'Item'
+      qty: 'Quantidade'
+    new:
+      new: 'Nova Ordem'
+    show:
+      title_seller: 'Dados do Vendedor'
+      seller: 'Vendedor'
+      buyer: 'Comprador'
+      item: 'Item'
+    edit:
+      editing: 'Editando Ordem'

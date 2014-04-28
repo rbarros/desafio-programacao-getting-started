@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<h4>Dados do Vendedor</h4>
+<p>
+  <strong><%= t :seller %>:</strong>
+  <%= @order.seller.name %>
+</p>
+<p>
+  <strong>Endereço:</strong>
+  <%= @order.seller.address.address %>
+</p>
+<p>
+  <strong>Numero:</strong>
+  <%= @order.seller.address.number %>
+</p>
+<p>
+  <strong>Complemento:</strong>
+  <%= @order.seller.address.complement %>
+</p>
+<p>
+  <strong>Cidade:</strong>
+  <%= @order.seller.address.city %>
+</p>
+<p>
+  <strong>Estado:</strong>
+  <%= @order.seller.address.zone.name %>
+</p>
+<p>
+  <strong>CEP:</strong>
+  <%= @order.seller.address.zip_code %>
+</p>
+
+<hr>
+
+<p>
+  <strong><%= t :buyer %>:</strong>
+  <%= @order.buyer.name %>
+</p>
+
+<hr>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Valor</th>
+      <th>Quantidade</th>
+      <th>Subtotal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @order.item.description %></td>
+      <td><%= @order.item.price %></td>
+      <td><%= @order.qty %>
+      <td><%= @order.item.price * @order.qty %></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td colspan="3"><%= @order.item.price * @order.qty %></td>
+    </tr>
+  </tfoot>
+</table>
+
+<%= link_to t(:edit), edit_order_path(@order) %> |
+<%= link_to t(:back), orders_path %>

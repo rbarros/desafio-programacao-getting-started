@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Endereço:</strong>
+  <%= @address.address %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @address.number %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @address.complement %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @address.zone.name %>
+</p>
+
+<p>
+  <strong>CEP:</strong>
+  <%= @address.zip_code %>
+</p>
+
+<%= link_to t(:edit), edit_address_path(@address) %> |
+<%= link_to t(:back), addresses_path %>

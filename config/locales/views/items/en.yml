@@ -1,0 +1,11 @@
+en:
+  items:
+    index:
+      listing: 'Listing Items'
+      editing: 'Editing Item'
+      new: 'New Item'
+    new:
+      new: 'New Item'
+    show:
+    edit:
+      editing: 'Editing Item'

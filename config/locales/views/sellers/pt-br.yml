@@ -1,0 +1,19 @@
+pt-br:
+  sellers:
+    index:
+      listing: 'Lista de Vendedores'
+      editing: 'Editando Vendedor'
+      new: 'Novo Vendedor'
+      name: 'Nome'
+    new:
+      new: 'Novo Vendedor'
+    show:
+      name: 'Nome'
+      address: 'Endereço'
+      number: 'Numero'
+      complement: 'Complemento'
+      city: 'Cidade'
+      zone: 'Estado'
+      zip_code: 'CEP'
+    edit:
+      editing: 'Editando Vendedor'

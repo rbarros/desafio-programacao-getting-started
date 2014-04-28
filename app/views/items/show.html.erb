@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @item.price %>
+</p>
+
+<%= link_to t(:edit), edit_item_path(@item) %> |
+<%= link_to t(:back), items_path %>

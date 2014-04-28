@@ -1,0 +1,49 @@
+<%= form_for(@seller) do |f| %>
+  <% if @seller.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seller.errors.count, "error") %> prohibited this seller from being saved:</h2>
+
+      <ul>
+      <% @seller.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <%= f.fields_for :address, @address do |address| %>
+    <div class="field">
+      <%= address.label :address %><br>
+      <%= address.text_field :address %>
+    </div>
+    <div class="field">
+      <%= address.label :number %><br>
+      <%= address.text_field :number %>
+    </div>
+    <div class="field">
+      <%= address.label :complement %><br>
+      <%= address.text_field :complement %>
+    </div>
+    <div class="field">
+      <%= address.label :city %><br>
+      <%= address.text_field :city %>
+    </div>
+    <div class="field">
+      <%= address.label :zone_id %><br>
+      <%= address.select(:zone_id, Zone.all.collect {|c| [c.name, c.id]}) %>
+    </div>
+    <div class="field">
+      <%= address.label :zip_code %><br>
+      <%= address.text_field :zip_code %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

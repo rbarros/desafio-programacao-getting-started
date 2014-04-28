@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @seller.name %>
+</p>
+
+<p>
+  <strong>Endereço:</strong>
+  <%= @seller.address.address %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @seller.address.number %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @seller.address.complement %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @seller.address.city %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @seller.address.zone.name %>
+</p>
+
+<p>
+  <strong>CEP:</strong>
+  <%= @seller.address.zip_code %>
+</p>
+
+<%= link_to t(:edit), edit_seller_path(@seller) %> |
+<%= link_to t(:back), sellers_path %>

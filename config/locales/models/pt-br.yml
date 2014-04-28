@@ -1,0 +1,33 @@
+pt-br:
+  activerecord:
+    models:
+      zone: "Estado"
+      address: "Endereço"
+      seller: "Vendedor"
+      buyer: "Comprador"
+      item: "Item"
+      order: "Ordem"
+    attributes:
+      zone:
+        code: "Uf"
+        name: "Nome"
+      address:
+        address: "Endereço"
+        number: "Numero"
+        complement: "Complemento"
+        city: "Cidade"
+        zone: "Estado"
+        zone_id: "Estado"
+        zip_code: "CEP"
+      seller:
+        name: "Nome"
+      buyer:
+        name: "Nome"
+      item:
+        description: "Descrição"
+        price: "Valor"
+      order:
+        seller_id: "Vendedor"
+        buyer_id: "Comprador"
+        item_id: "Item"
+        qty: "Quantidade"

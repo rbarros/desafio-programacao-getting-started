@@ -1,0 +1,13 @@
+en:
+  sellers:
+    index:
+      listing: 'Listing Sellers'
+      editing: 'Editing Seller'
+      new: 'New Seller'
+      name: 'Name'
+    new:
+      new: 'New Seller'
+    show:
+      name: 'Name'
+    edit:
+      editing: 'Editing Seller'
