@@ -10,4 +10,4 @@ $ rake db:setup
 # Inicia o servidor para teste
 $ rails s
 ```
-Após iniciar o servidor pode acessar a url (http://localhost:3000)[http://localhost:3000].
+Após iniciar o servidor pode acessar a url [http://localhost:3000](http://localhost:3000).
