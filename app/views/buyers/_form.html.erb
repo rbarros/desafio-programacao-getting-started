@@ -1,7 +1,7 @@
 <%= form_for(@buyer) do |f| %>
   <% if @buyer.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@buyer.errors.count, "error") %> prohibited this buyer from being saved:</h2>
+      <h2><%= pluralize(@buyer.errors.count, t(:error)) %> <%= t :error_message %></h2>
 
       <ul>
       <% @buyer.errors.full_messages.each do |message| %>

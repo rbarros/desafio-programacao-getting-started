@@ -2,50 +2,50 @@
 
 <h4><%= t '.title_seller' %></h4>
 <p>
-  <strong><%= t :seller %>:</strong>
+  <strong><%= t '.seller' %>:</strong>
   <%= @order.seller.name %>
 </p>
 <p>
-  <strong>Endereço:</strong>
+  <strong><%= t '.address' %>:</strong>
   <%= @order.seller.address.address %>
 </p>
 <p>
-  <strong>Numero:</strong>
+  <strong><%= t '.number' %>:</strong>
   <%= @order.seller.address.number %>
 </p>
 <p>
-  <strong>Complemento:</strong>
+  <strong><%= t '.complement' %>:</strong>
   <%= @order.seller.address.complement %>
 </p>
 <p>
-  <strong>Cidade:</strong>
+  <strong><%= t '.city' %>:</strong>
   <%= @order.seller.address.city %>
 </p>
 <p>
-  <strong>Estado:</strong>
+  <strong><%= t '.zone' %>:</strong>
   <%= @order.seller.address.zone.name %>
 </p>
 <p>
-  <strong>CEP:</strong>
+  <strong><%= t '.zip_code' %>:</strong>
   <%= @order.seller.address.zip_code %>
 </p>
 
 <hr>
 
 <p>
-  <strong><%= t :buyer %>:</strong>
+  <strong><%= t '.buyer' %>:</strong>
   <%= @order.buyer.name %>
 </p>
 
 <hr>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th>Item</th>
-      <th>Valor</th>
-      <th>Quantidade</th>
-      <th>Subtotal</th>
+      <th><%= t '.item' %></th>
+      <th><%= t '.price' %></th>
+      <th><%= t '.qty' %></th>
+      <th><%= t '.subtotal' %></th>
     </tr>
   </thead>
   <tbody>
@@ -58,7 +58,7 @@
   </tbody>
   <tfoot>
     <tr>
-      <td>Total</td>
+      <td><b><%= t '.total' %></b></td>
       <td colspan="3"><%= number_to_currency(@order.item.price * @order.qty) %></td>
     </tr>
   </tfoot>
