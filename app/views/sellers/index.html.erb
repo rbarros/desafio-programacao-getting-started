@@ -1,9 +1,9 @@
-<h1><%= t :listing %> <%= t :sellers %></h1>
+<h1><%= t '.listing' %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
+      <th><%= t '.name' %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to t(:new) + ' ' + t(:seller), new_seller_path %>
+<%= link_to t('.new'), new_seller_path %>

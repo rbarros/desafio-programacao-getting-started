@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h4>Dados do Vendedor</h4>
+<h4><%= t '.title_seller' %></h4>
 <p>
   <strong><%= t :seller %>:</strong>
   <%= @order.seller.name %>
@@ -51,15 +51,15 @@
   <tbody>
     <tr>
       <td><%= @order.item.description %></td>
-      <td><%= @order.item.price %></td>
+      <td><%= number_to_currency(@order.item.price) %></td>
       <td><%= @order.qty %>
-      <td><%= @order.item.price * @order.qty %></td>
+      <td><%= number_to_currency(@order.item.price * @order.qty) %></td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
       <td>Total</td>
-      <td colspan="3"><%= @order.item.price * @order.qty %></td>
+      <td colspan="3"><%= number_to_currency(@order.item.price * @order.qty) %></td>
     </tr>
   </tfoot>
 </table>

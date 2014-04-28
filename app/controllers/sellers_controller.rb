@@ -5,6 +5,7 @@ class SellersController < ApplicationController
   # GET /sellers.json
   def index
     @sellers = Seller.all
+    @address = Address.new
   end
 
   # GET /sellers/1
@@ -20,6 +21,7 @@ class SellersController < ApplicationController
 
   # GET /sellers/1/edit
   def edit
+    @seller.address.zip_code = @seller.address.zip_code.to_s.gsub(/^([\d]{5})([\d]{3})$/, '\1-\2')
   end
 
   # POST /sellers
@@ -32,6 +34,7 @@ class SellersController < ApplicationController
         format.html { redirect_to @seller, notice: 'Seller was successfully created.' }
         format.json { render :show, status: :created, location: @seller }
       else
+        @address = Address.new
         format.html { render :new }
         format.json { render json: @seller.errors, status: :unprocessable_entity }
       end
@@ -70,6 +73,8 @@ class SellersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def seller_params
+      zip_code = params[:seller][:address_attributes][:zip_code]
+      params[:seller][:address_attributes][:zip_code] = zip_code.gsub(/\D/, "")
       params.require(:seller).permit( :name, :address_id, address_attributes: [ :id, :address, :number, :complement, :city, :zone_id, :zip_code])
     end
 end

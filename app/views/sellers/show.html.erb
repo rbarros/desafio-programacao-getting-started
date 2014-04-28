@@ -1,38 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nome:</strong>
+  <strong><%= t '.name' %>:</strong>
   <%= @seller.name %>
 </p>
 
 <p>
-  <strong>Endereço:</strong>
+  <strong><%= t '.address' %>:</strong>
   <%= @seller.address.address %>
 </p>
 
 <p>
-  <strong>Numero:</strong>
+  <strong><%= t '.number' %>:</strong>
   <%= @seller.address.number %>
 </p>
 
 <p>
-  <strong>Complemento:</strong>
+  <strong><%= t '.complement' %>:</strong>
   <%= @seller.address.complement %>
 </p>
 
 <p>
-  <strong>Cidade:</strong>
+  <strong><%= t '.city' %>:</strong>
   <%= @seller.address.city %>
 </p>
 
 <p>
-  <strong>Estado:</strong>
+  <strong><%= t '.zone' %>:</strong>
   <%= @seller.address.zone.name %>
 </p>
 
 <p>
-  <strong>CEP:</strong>
-  <%= @seller.address.zip_code %>
+  <strong><%= t '.zip_code' %>:</strong>
+  <%= @seller.address.zip_code.to_s.gsub(/^([\d]{5})([\d]{3})$/, '\1-\2') %>
 </p>
 
 <%= link_to t(:edit), edit_seller_path(@seller) %> |

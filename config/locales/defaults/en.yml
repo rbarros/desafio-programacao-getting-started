@@ -22,3 +22,5 @@
 en:
   error: 'Error'
   error_message: 'prohibited this seller from being saved:'
+  edit_profile : 'Edit profile'
+  logout: 'Logout'

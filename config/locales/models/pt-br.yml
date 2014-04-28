@@ -7,6 +7,7 @@ pt-br:
       buyer: "Comprador"
       item: "Item"
       order: "Ordem"
+      user: 'Usuário'
     attributes:
       zone:
         code: "Uf"
@@ -31,3 +32,8 @@ pt-br:
         buyer_id: "Comprador"
         item_id: "Item"
         qty: "Quantidade"
+      user:
+        email: 'E-mail'
+        password: 'Senha'
+        password_confirmation: 'Confirmar Senha'
+        current_password: 'Senha atual'

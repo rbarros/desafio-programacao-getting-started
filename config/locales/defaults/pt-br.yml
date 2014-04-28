@@ -209,7 +209,9 @@ pt-br:
   confirm: 'Você tem certeza'
   new: 'Novo'
   error: 'Erro'
-  error_message: 'Preencha os campos em vermelho  :'
+  error_message: 'Preencha os campos em vermelho:'
+  edit_profile : 'Editar Perfil'
+  logout: 'Sair'
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
